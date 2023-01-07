@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<title>D´Marco Biblioteca</title>
+    <link rel="icon" type="image/png" href="book.png" >
+	<body>
+        <header>
+             <nav id="navN">
+                <ul class="nav justify-content-center " >
+                    <li class="nav-item " id="navBar" >
+                      <a class="nav-link " aria-current="page" href="#libros" id="link">Libros </a>
+                    </li>
+                    <li class="nav-item" id="navBar">
+                      <a class="nav-link" href="#ubicacion" id="link">Ubicacion</a>
+                    </li>
+                    <li class="nav-item" id="navBar">
+                      <a class="nav-link" href="#horarios" id="link">Horarios</a>
+                    </li>
+                  </ul>
+              </nav>
+        </header>
+        <div class="container-fluid " id="uno">  
+            <h1 class="display-6">Bienvenidos a la biblioteca  D´Marco <br>los mejores libros a tu alcance! </h1>
+        </div>
+        <div class="img-container-fondo">
+            <br>
+            <div class="container text-center" id="container-libros" >
+                <div class="card-group">
+                    <div class="card">
+              
+                      <div class="card-body" id="libros">
+                        <h5 class="card-title">Cien años de soledad, de Gabriel García Márquez</h5>
+                        <p class="card-text">Cien años de soledad trata un siglo en la vida de la familia Buendía, cuyo patriarca, José Arcadio Buendía, fundó el pueblo ficticio de Macondo, en Colombia.</p>
+                      </div>
+                      
+                      <div class="card-footer">
+                        <button type="button" class="btn btn-dark  btn-sm " id="boton" onclick='cambiarTexto("botonUno")' >RESERVAR</button>
+                      
+                      </div>
+                    </div>
+                    <div class="card">
+                        
+                        <div class="card-body">
+                          <h5 class="card-title">Orgullo y prejuicio, de Jane Austen</h5>
+                          <p class="card-text">Orgullo y prejuicio narra las aventuras y desventuras amorosas de las hermanas Bennet, centrándose en el personaje de Elizabeth, a través de las cuales la autora nos presenta con comicidad la sociedad de su tiempo y coloca a la mujer en un lugar más notorio que el que le correspondía en su época con la figura de la protagonista.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-dark btn-sm " id="boton"  >RESERVAR</button>
+                        </div>
+                      </div>
+                      <div class="card">
+                      
+                        <div class="card-body">
+                          <h5 class="card-title">Madame Bovary, de Gustave Flaubert</h5>
+                          <p class="card-text">La soñadora Emma, una joven de provincias casada con Charles Bovary, un hombre aburrido incapaz de complacerla y satisfacerla, buscará la realización de sus sueños en otros amores, pasionales y platónicos…, pero ninguno de ellos logrará calmar su desesperada ansiedad y sus románticas inquietudes.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-dark btn-sm " id="boton" > RESERVAR</button>
+                        </div>
+                      </div>
+                  </div>
+                  <br>
+
+                   <!-- SEGUNDA FILA DE CARDS-->
+                  <div class="card-group">
+                    <div class="card">
+              
+                      <div class="card-body" >
+                        <h5 class="card-title"> Harry Potter de J.K. Rowling</h5>
+                        <p class="card-text">Harry Potter es una heptalogía de novelas fantásticas escrita por la autora británica J. K. Rowling, en la que se describen las aventuras del joven aprendiz de mago Harry Potter y sus amigos Hermione Granger y Ron Weasley, durante los siete años que pasan en el Colegio Hogwarts de Magia y Hechicería.</p>
+                      </div>
+                      <div class="card-footer">
+                        <button type="button" class="btn btn-dark btn-sm " id="boton" >RESERVAR</button>
+                      </div>
+                    </div>
+                    <div class="card">
+                        
+                        <div class="card-body">
+                          <h5 class="card-title"> El Señor de los Anillos de J.R.R. Tolkien</h5>
+                          <p class="card-text">El Señor de los Anillos es una novela de fantasía épica escrita por el filólogo y escritor británico J. R. R. Tolkien. Su historia se desarrolla en la Tercera Edad del Sol de la Tierra Media, un lugar ficticio poblado por hombres y otras razas antropomorfas como los hobbits, los elfos o los enanos, así como por muchas otras criaturas reales y fantásticas.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-dark btn-sm " id="boton"  >RESERVADO</button>
+                        </div>
+                      </div>
+                      <div class="card">
+                      
+                        <div class="card-body">
+                          <h5 class="card-title">El Alquimista de Paulo Coelho</h5>
+                          <p class="card-text">El libro trata sobre los sueños y los medios que utilizamos para alcanzarlos, sobre el azar en nuestra vida y las señales que se presentan a lo largo de esta.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-dark btn-sm " id="boton"  >RESERVADO</button>
+                        </div>
+                      </div>
+                  </div>
+                  <br>
+                  
+         </div>
+        </div>
+         <!-- FORM-->
+         <div id="form">
+          <div class="container">
+                <h3>DEJANOS TU OPINION</h3>
+                <form action="#" id="datos">
+                  
+                  <label for="GET-name">Nombre: </label>
+                  <input id="GET-name" type="text" name="name" placeholder="Nombre" >
+                  <label for="GET-mail">Mail: </label>
+                  <input id="GET-mail" type="text" name="mail" placeholder="Mail">
+                  
+                  <textarea name="GET-opinion" placeholder="Ingrese su opinion aqui..." rows="10"></textarea>
+  
+                  <input type="submit" value="ENVIAR" id="boton-enviar">
+                 
+                </form>
+              </div>
+            </div>
+        <!-- FOOTER-->
+         <footer >
+            <div class="contacto" id="ubicacion">
+                <h4>Como llegar</h4>
+                <ol>
+                    <li>Florencio Varela 1111</li>
+                    <li>San justo, Buenos Aires, Argentina</li>
+                    <li>(+5411) 4455-6600</li>
+                </ol>
+            </div>
+            <div class="horarios" id="horarios">
+                <h4>Horarios</h4>
+                <ol>
+                    <li>Lunes a Sabados 9 A.M hasta 20 P.M</li>
+                    <li>Dias feriados se encuentra cerrada.</li>
+                </ol>
+            </div>
+            <div class="copyright">
+                <p>
+                    &copy; Ezequiel Bolzi 2022
+                </p>
+            </div>
+        </footer>  
+        <script >
+          $(document).ready(function() {
+            $('#boton-enviar').click(function() {
+                alert("Formulario enviado!");
+
+            });
+
+          });
+        </script>
+        
+
+        <script src="main.js"></script>
+    </body>
+</html>
